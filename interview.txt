@@ -1,0 +1,41 @@
+Launch the application
+Verify that the user is navigated to Tutorial screen
+Click on “Make Payment” link in Tutorial screen that is navigated to Payment screen in  new browser window
+In  Payment screen, select any one of the Cities
+eg, Bangalore
+The user should  be navigated to Tutorial screen or help Page
+
+
+@test
+public void makePayment(){
+WebDriver driver=new ChromeDriver();
+driver.manage.window().maximize();
+driver.get("https");
+String expectedTitle="tutorial screen";
+String actualTitle=driver.getTitle();
+Assert.assertTrue(actualTitle.contains(expectedTitle));
+driver.findElement(By.name("Make Payment")).click();
+String parentWindow=driver.getTitle();
+Set<String> set = driver.getWindowHandles();
+Set<Iterator> it=set.iterator();
+while(it.hasNext()){
+String winId=it.next();
+String currentWindow=driver.getTile();
+if(!currentWindow.contains(parentWindow)){
+break;
+	}
+   }
+
+Select
+}
+
+
+AndroidDriver driver=new Androi
+
+driver.runAppInBackground(10);
+driver.startActivity("");
+
+
+
+
+
