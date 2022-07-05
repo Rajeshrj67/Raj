@@ -1,3 +1,4 @@
+two
 one
 Launch the application
 Verify that the user is navigated to Tutorial screen
