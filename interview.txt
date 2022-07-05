@@ -1,3 +1,4 @@
+one
 Launch the application
 Verify that the user is navigated to Tutorial screen
 Click on “Make Payment” link in Tutorial screen that is navigated to Payment screen in  new browser window
